@@ -1,0 +1,51 @@
+#Es. 24 pag. 73
+voti_primo_candidato = int(input("Inserire i voti del primo candidato"))
+voti_secondo_candidato = int(input("Inserire i voti del primo candidato"))
+voti_totali = voti_primo_candidato + voti_secondo_candidato
+percentuale_primo_candidato = (voti_primo_candidato*100)/voti_totali
+percentuale_secondo_candidato= 100-voti_secondo_candidato
+if percentuale_primo_candidato > percentuale_secondo_candidato:
+    print("Ha vinto il primo candidato con " , voti_primo_candidato , "con una percentuale del" , percentuale_primo_candidato , "%")
+else:
+    print("Ha vinto il secondo candidato con " , voti_secondo_candidato , "con una percentuale del" , percentuale_secondo_candidato , "%" )
+
+
+#Es. 25 pag. 73
+print("Inserire i voti e il nome del primo candidato")
+voti_primo_candidato = int(input("Inserire i voti del primo candidato"))
+nome1 = input("Inserire il nome del candidato")
+voti_secondo_candidato = int(input("Inserire i voti del primo candidato"))
+nome2 = input("Inserire il nome del candidato")
+lista_nomi = [nome1, nome2]
+lista_voti = [voti_primo_candidato, voti_secondo_candidato]
+lista_nomi.sort()
+lista_voti.sort(reverse=True)
+print(lista_nomi)
+print(lista_voti)
+
+
+
+#Es. 26 pag. 73
+lista_stipendi=[]
+count = True
+dipendenti = 0
+ripetizioni = int(input("Quanti dipendenti ci sono nell'azienda?"))
+somma = 0
+while count == True:
+    dipendenti += 1
+    stipendio_persona=int(input("Stipendio dipendente"))
+    lista_stipendi.append(stipendio_persona)
+
+    if dipendenti == ripetizioni:
+        tasto_exit = int(input("Per uscire premi -1"))
+        if tasto_exit == -1:
+            count = False
+        else:
+            pass
+for i in lista_stipendi:
+    somma += i
+l = len(lista_stipendi)
+print(lista_stipendi)
+media_stipendi = somma/l
+print(media_stipendi)
+
