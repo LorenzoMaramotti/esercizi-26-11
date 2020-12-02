@@ -22,9 +22,10 @@ while True:
     if numero_lanci==numero_studenti:
         break
 
-lancio_max= max(lista_lanci)
-i = lista_lanci.index(lancio_max)
-i2 = lista_nomi[i]
-print("Questa è la lista dei partecipanti: " , lista_nomi)
-print("Questa è la lista dei lanci: " , lista_lanci)
-print("Ha vinto", i2, "con un lancio di", lancio_max, "metri")
+lancio_max=max(lista_lanci)
+index_lancio=lista_lanci.index(lancio_max)
+index_nome=lista_nomi[index_lancio]
+print("Questa è la lista dei partecipanti:" , lista_nomi)
+print("Questa è la lista dei lanci:" , lista_lanci)
+print("Ha vinto", index_nome, "con un lancio di", lancio_max, "metri")
+
