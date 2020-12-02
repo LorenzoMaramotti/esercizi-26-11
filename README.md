@@ -1,1 +1,1 @@
-#esercizi di informatica assegnati in classe
+esercizi di informatica assegnati in classe
